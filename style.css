@@ -1,0 +1,35 @@
+body
+{
+}
+
+#conteneur
+{
+    display: flex; /* Base du mode flexbox, sur le conteneur */
+    flex-direction: row; /* orientation de l'axe principal des blocs */
+    flex-wrap: wrap; /* si les blocs vont a la ligne ou non et comment*/
+    justify-content: space-between; /* ecartement des blocs */
+    align-items: center; /* alignement de l'axe secondaire, margin peut être utilisé a la place */
+    
+    height: 800px;
+}
+
+.element1, .element2, .element3
+{
+    width: 500px;
+    height: 50px;
+}
+
+.element1 {
+    background-color: aqua;
+    order: 2; /* permet de placer les blocs dans l'ordre désigné */ 
+    flex : 1; /* taille de l'élément par rapport aux autres */
+}
+
+.element2 {
+    background-color:brown;
+    /* align-self: flex-end; /* décide lui meme de s'aligner ou non */
+}
+
+.element3 {
+    background-color:coral;
+}
